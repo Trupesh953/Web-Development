@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Website </title>
+    <link rel="stylesheet" href="style.css"/>
+    <style>
+     /* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+ul {
+    list-style-type: none;
+}
+
+
+
+.hero {
+    background: url('hero.jpg') no-repeat center center/cover;
+    color: white;
+    text-align: center;
+    padding: 100px 20px;
+}
+
+.hero h2 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+
+.cta-button {
+    background-color: #f39c12;
+    padding: 10px 20px;
+    border-radius: 5px;
+    color: white;
+    font-size: 1.2rem;
+    transition: background-color 0.3s;
+}
+
+.cta-button:hover {
+    background-color: #e67e22;
+}
+
+.destinations, .services, .testimonials, .gallery {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.destinations h2, .services h2, .testimonials h2, .gallery h2 {
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+}
+
+.destination-cards, .service-cards {
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+}
+
+.card, .service-card {
+    background-color: #f4f4f4;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 30%;
+    text-align: center;
+}
+
+.card img, .service-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.testimonial {
+    background-color: #f4f4f4;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+}
+
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+}
+
+.gallery-grid img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
+
+
+    </style>
+</head>
+<body>
+    <header>
+        <header>
+            <div class="logo">
+                <a href="#"><img src="logo.jpg" alt="logo"></a>
+            </div>
+            <nav class="nav-menu">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="explore.html">Explore</a></li>
+                    <li><a href="booking.html">Booking</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+
+            </nav>
+        </header>
+    </header>
+    <main>
+     <!-- Hero Section -->
+     <section id="home" class="hero">
+        <div class="hero-text">
+            <h2>Your Adventure Starts Here</h2>
+            <p>Explore the best destinations around the world with us!</p>
+            <a href="#destinations" class="cta-button">Explore Destinations</a>
+        </div>
+    </section>
+
+    <!-- Destinations Section -->
+    <section id="destinations" class="destinations">
+        <h2>Top Destinations</h2>
+        <div class="destination-cards">
+            <div class="card">
+                <img src="destination-1.jpg" alt="Paris">
+                <h3>Paris</h3>
+                <p>The City of Light</p>
+            </div>
+            <div class="card">
+                <img src="destination-2.jpg" alt="Maldives">
+                <h3>Maldives</h3>
+                <p>Heaven on Earth</p>
+            </div>
+            <div class="card">
+                <img src="destination-3.jpg" alt="New York">
+                <h3>New York</h3>
+                <p>The City That Never Sleeps</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services">
+        <h2>Our Services</h2>
+        <div class="service-cards">
+            <div class="service-card">
+                <img src="s1.jpg" alt="New York">
+                <h3>Flight Booking</h3>
+                <p>Find and book the best flights at unbeatable prices.</p>
+            </div>
+            <div class="service-card">
+                <img src="s2.jpg" alt="New York">
+                <h3>Hotel Reservations</h3>
+                <p>Stay in the finest hotels around the globe.</p>
+            </div>
+            <div class="service-card">
+                <img src="s3.jpg" alt="New York">
+                <h3>Guided Tours</h3>
+                <p>Join us for a guided tour to explore the local culture and landmarks.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="testimonials">
+        <h2>What Our Clients Say</h2>
+        <div class="testimonial">
+            <p>"The trip was amazing! Everything was well organized, and we had the time of our lives."</p>
+            <span>- Sarah L.</span>
+        </div>
+        <div class="testimonial">
+            <p>"Highly recommend! The service was top-notch, and our guide was very knowledgeable."</p>
+            <span>- John D.</span>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="gallery" class="gallery">
+        <h2>Our Gallery</h2>
+        <div class="gallery-grid">
+            <img src="beach.jpg" alt="Beach">
+            <img src="mount.jpg" alt="Mountains">
+            <img src="city.jpg" alt="City">
+        </div>
+    </section>
+        
+   
+          <footer>
+            <div class="social-icons">
+              <a href="https://www.facebook.com/" target="_blank" ><i class="fab fa-facebook"></i ></a>
+              <a href="https://www.twitter.com/" target="_blank"  ><i class="fab fa-twitter"></i ></a>
+              <a href="https://www.instagram.com/" target="_blank" ><i class="fab fa-instagram"></i ></a>
+            </div>
+            <p>&copy; 2023 Your Travel Website. All Rights Reserved.</p>
+          </footer>
+        </main>
+      </body>
+      <script
+        src="https://kit.fontawesome.com/6558443b63.js"
+        crossorigin="anonymous"
+      ></script>
+    </html>
+     
+
+         

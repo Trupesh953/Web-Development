@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio</title>
+    <style>
+        /* General reset and box-sizing */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            color: #E0E0E0; /* Light gray text */
+            background: #0D1117; /* Dark blue-gray background for modern look */
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .container {
+            max-width: 1200px;
+            width: 100%;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 50px;
+        }
+
+        header h1 {
+            font-size: 3.5rem;
+            color: #58A6FF; /* Teal blue for the main heading */
+        }
+
+        header p {
+            font-size: 1.2rem;
+            color: #A0A0A0; /* Slightly lighter gray for subtext */
+        }
+
+        .profile-photo {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            margin: 20px auto;
+            border: 5px solid #58A6FF; /* Teal border around the profile photo */
+            display: block;
+        }
+
+        nav {
+            margin-top: 20px;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #58A6FF; /* Teal accent color */
+            margin: 0 15px;
+            font-size: 1rem;
+            transition: color 0.3s ease-in-out;
+        }
+
+        nav a:hover {
+            color: #8DFF00; /* Lime Green on hover */
+        }
+
+        section {
+            margin-bottom: 50px;
+            text-align: center;
+        }
+
+        section h2 {
+            font-size: 2.5rem;
+            color: #F1F1F1;
+            margin-bottom: 20px;
+        }
+
+        section p {
+            font-size: 1.1rem;
+            color: #A0A0A0;
+        }
+
+        .grid {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        .card {
+            background: rgba(255, 255, 255, 0.05); /* Transparent light overlay */
+            padding: 20px;
+            border-radius: 10px;
+            width: 300px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.7); /* Subtle shadow */
+            color: #E0E0E0;
+            transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+        }
+
+        .card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 6px 10px rgba(0, 0, 0, 0.9); /* Elevated shadow */
+        }
+
+        footer {
+            margin-top: auto;
+            padding: 20px;
+            background: #161B22; /* Slightly darker footer background */
+            color: #E0E0E0;
+            text-align: center;
+            width: 100%;
+        }
+
+        footer p {
+            font-size: 1rem;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <img src="me.jpg" alt="Your Photo" class="profile-photo">
+            <h1>Trupesh Thummar</h1>
+            <p>Web Development | FrontendDevelopment </p>
+            <nav>
+                <a href="#about">About</a>
+                <a href="#skills">Skills</a>
+                <a href="#projects">Projects</a>
+            </nav>
+        </header>
+
+        <section id="about">
+            <h2>About Me</h2>
+            <p>I'm Trupesh Thummar, a dedicated developer specializing in crafting elegant and functional web applications. With a blend of creativity and technical expertise, I aim to deliver experiences that leave a lasting impression.</p>
+        </section>
+
+        <section id="skills">
+            <h2>Skills</h2>
+            <div class="grid">
+                <div class="card">HTML</div>
+                <div class="card">CSS </div>
+                <div class="card">JavaScript</div>
+                <div class="card">Backend (Node.js, Express)</div>
+                <div class="card">Database (MongoDB, SQL)</div>
+                <div class="card">Version Control (Git)</div>
+            </div>
+        </section>
+
+        <section id="projects">
+            <h2>Projects</h2>
+            <div class="grid">
+                <div class="card">
+                    <h3>Portfolio Website</h3>
+                    <p>A sleek, responsive portfolio showcasing my journey and skills.</p>
+                </div>
+                <div class="card">
+                    <h3>E-Commerce App</h3>
+                    <p>Developed a full-stack e-commerce application with payment integration.</p>
+                </div>
+                <div class="card">
+                    <h3>Weather Dashboard</h3>
+                    <p>Built a weather app that displays real-time data using APIs.</p>
+                </div>
+            </div>
+        </section>
+
+        <footer>
+            <p>&copy; 2024 Trupesh Thummar. All rights reserved.</p>
+        </footer>
+    </div>
+</body>
+</html>
